@@ -7,7 +7,7 @@ import clevertap from 'clevertap-web-sdk';
 
 
 // clevertap.init('W9R-486-4W5Z')
-clevertap.init('W48-7W7-495Z', 'sk1-staging-13', 'wzrkt.com')
+clevertap.init('4R4-5K9-475Z', 'sk1-staging-13', 'wzrkt.com')
 clevertap.setLogLevel(3)
 clevertap.privacy.push({ optOut: false, useIP: true });
 clevertap.dismissSpamControl = true
