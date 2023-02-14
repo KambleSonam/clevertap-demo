@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import clevertap from 'clevertap-web-sdk';
 
 
-clevertap.init('W9R-486-4W5Z')
-// clevertap.init('5WW-WWW-WW4Z', 'sg1-staging-1', 'wzrkt.com')
+// clevertap.init('W9R-486-4W5Z')
+clevertap.init('W48-7W7-495Z', 'sk1-staging-13', 'wzrkt.com')
 clevertap.setLogLevel(3)
 clevertap.privacy.push({ optOut: false, useIP: true });
 clevertap.dismissSpamControl = true
