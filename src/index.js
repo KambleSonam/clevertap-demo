@@ -10,7 +10,7 @@ clevertap.init('W9R-486-4W5Z')
 // clevertap.init('4R4-5K9-475Z', 'sk1-staging-13', 'wzrkt.com')
 clevertap.setLogLevel(3)
 clevertap.privacy.push({ optOut: false, useIP: true });
-clevertap.dismissSpamControl = true
+// clevertap.dismissSpamControl = true
 // clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')
 // clevertap.init('4R4-5K9-475Z', 'sk1-staging-4', 'wzrkt.com')
 
