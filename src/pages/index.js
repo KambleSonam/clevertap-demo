@@ -10,15 +10,15 @@ const Home = () => {
     //   })
         document.getElementById('ctId').innerHTML = clevertap.getCleverTapID()
 
-        var LRU_CACHE = decodeURIComponent(localStorage["WZRK_CAMP"]);
-        var WZRK_META = decodeURIComponent(localStorage["WZRK_META"]);
-        var WZRK_G = decodeURIComponent(localStorage["WZRK_G"]);
-        var WZRK_EV = decodeURIComponent(localStorage["WZRK_EV"]);
-        var WZRK_ARP = decodeURIComponent(localStorage["WZRK_ARP"]);
+        // var LRU_CACHE = decodeURIComponent(localStorage["WZRK_CAMP"]);
+        // var WZRK_META = decodeURIComponent(localStorage["WZRK_META"]);
+        // var WZRK_G = decodeURIComponent(localStorage["WZRK_G"]);
+        // var WZRK_EV = decodeURIComponent(localStorage["WZRK_EV"]);
+        // var WZRK_ARP = decodeURIComponent(localStorage["WZRK_ARP"]);
 
-        var data = `<div>WZRK_K: ${WZRK_META}</div><br /><div>WZRK_G: ${WZRK_G}</div><br /><div>LRU_CAHCE: ${LRU_CACHE}</div><br /><div>WZRK_EV: ${WZRK_EV}</div><br /><div>WZRK_ARP: ${WZRK_ARP}</div>`;
+        // var data = `<div>WZRK_K: ${WZRK_META}</div><br /><div>WZRK_G: ${WZRK_G}</div><br /><div>LRU_CAHCE: ${LRU_CACHE}</div><br /><div>WZRK_EV: ${WZRK_EV}</div><br /><div>WZRK_ARP: ${WZRK_ARP}</div>`;
 
-        document.getElementById("lsData").innerHTML = data;
+        // document.getElementById("lsData").innerHTML = data;
    }, []);
 
     function clickEvent() {
