@@ -34,13 +34,13 @@ const Navbar = () => {
           <NavLink to='/sign-up' activestyle="true">
             Sign Up
           </NavLink>
-          <div><button  id='bell-selector' onClick={inboxEvent} style={{ marginLeft: '8px'}}>Inbox</button></div>
+          {/* <div><button  id='CMInbox' style={{ marginLeft: '8px'}}>Inbox</button></div> */}
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
-        <NavBtn>
+        {/* <NavBtn>
           <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-        </NavBtn>
+        </NavBtn> */}
       </Nav>
     </>
   );
