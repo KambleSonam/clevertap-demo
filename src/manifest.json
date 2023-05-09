@@ -1,0 +1,15 @@
+{
+    "name": "SignedCall",
+    "short_name": "SC",
+    "start_url": "https://clevertap-demo.vercel.app/",
+    "id": "https://clevertap-demo.vercel.app/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "https://cdn.pushalert.co/icons/app-icon-56138-1.png?1683583087",
+            "sizes": "512x512"
+        }
+    ]
+}

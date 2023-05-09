@@ -45,7 +45,8 @@ const Home = () => {
             <div style={{ marginTop: '10px'}}>
                 <button onClick={enablePush}>Enable Push Notifications</button>
             </div>
-            <div id="hero-banner" style={{ marginTop: '10px'}}></div>
+            <div className="chetanclass" style={{ marginTop: '10px'}}></div>
+            <div id="CM01" style={{ marginTop: '10px'}}></div>
             <div>{navigator.userAgent}</div>
             <div id="ctId"></div>
             <div id="lsData"></div>
