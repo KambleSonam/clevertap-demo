@@ -16,10 +16,24 @@ const Home = () => {
 //     });
 //    }, []);
 
+   
     function clickEvent() {
-        clevertap.event.push(text);
+        clevertap.event.push(text);   
     };
 
+    if (document.getElementById('wiz-iframe-intent')) {
+        console.log('clicked')
+    } else {
+        const t = setInterval(() => {
+          if (document.getElementById('wiz-iframe-intent')) {
+            const button = document.getElementById('wiz-iframe-intent').contentWindow.document.getElementById('ct_submitButton')
+            button.addEventListener('click', () => {
+                clevertap.event.push('React Web Test')
+                clearInterval(t)
+            });              
+          }
+        }, 3000)
+    } 
     function enablePush() {
         clevertap.notifications.push({
             "titleText":"Would you like to receive Push Notifications?",
@@ -40,8 +54,8 @@ const Home = () => {
             <div style={{ marginTop: '10px'}}>
                 <button onClick={enablePush}>Enable Push Notifications</button>
             </div>
-            <div className="chetanclass" style={{ marginTop: '10px'}}></div>
-            <div id="CM01" style={{ marginTop: '10px'}}></div>
+            <div className="heroDiv" style={{ marginTop: '10px'}}></div>
+            <div id="heroDiv" style={{ marginTop: '10px'}}></div>
             <div>{navigator.userAgent}</div>
             <div id="ctId"></div>
             <div id="lsData"></div>
