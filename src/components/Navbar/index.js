@@ -7,6 +7,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements';
+import bell from '../../assets/bell.png'
   
 const Navbar = () => {
   function inboxEvent() {
@@ -34,7 +35,7 @@ const Navbar = () => {
           <NavLink to='/sign-up' activestyle="true">
             Sign Up
           </NavLink>
-          <div><button  id='bell-selector' style={{ marginLeft: '8px'}}>Inbox</button></div>
+          <div id='bell-selector'><img style={{width: '24px', height: '24px'}} src={bell} className="bell-icon" alt="bell" /></div>
         </NavMenu>
       </Nav>
     </>
