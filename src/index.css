@@ -37,11 +37,3 @@ ct-web-inbox::part(ct-inbox-message) {
   background-color:white;
   border-radius: 6px
 }
-/* ct-web-inbox::part(category[selected="true"]) {
-  border-bottom: 2px solid red
-} */
-
-/* ct-web-inboxe::part(ct-inbox-message)::part(messageWrapper) {
-  background-color: white
-}
- */

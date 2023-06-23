@@ -4,16 +4,10 @@ import {
   NavLink,
   Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
 } from './NavbarElements';
 import bell from '../../assets/bell.png'
   
 const Navbar = () => {
-  function inboxEvent() {
-    // clevertap.event.push('React Web Test');
-  };
-
   return (
     <>
       <Nav>
