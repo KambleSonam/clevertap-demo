@@ -34,13 +34,8 @@ const Navbar = () => {
           <NavLink to='/sign-up' activestyle="true">
             Sign Up
           </NavLink>
-          {/* <div><button  id='CMInbox' style={{ marginLeft: '8px'}}>Inbox</button></div> */}
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+          <div><button  id='bell-selector' style={{ marginLeft: '8px'}}>Inbox</button></div>
         </NavMenu>
-        {/* <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-        </NavBtn> */}
       </Nav>
     </>
   );

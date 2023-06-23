@@ -11,12 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* ct-web-inbox {
-  font-family: monospace;
-  --inbox-width:400px;
-  --inbox-height:100%; 
-  --inbox-top:0px;
-  --inbox-left:unset;
-  --inbox-right:0px;
-  --inbox-bottom:unset;
+
+ct-web-inbox::part(categoriesWrapper) {
+  border-bottom: 1px solid gray
+}
+
+ct-web-inbox::part(emptyInboxMsg) {
+  color:white
+}
+
+ct-web-inbox::part(header) {
+  display:none
+}
+
+ct-web-inbox::part(inboxCard) {
+  height:450px
+}
+ct-web-inbox::part(category) {
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+ct-web-inbox::part(ct-inbox-message) {
+  background-color:white;
+  border-radius: 6px
+}
+/* ct-web-inbox::part(category[selected="true"]) {
+  border-bottom: 2px solid red
 } */
+
+/* ct-web-inboxe::part(ct-inbox-message)::part(messageWrapper) {
+  background-color: white
+}
+ */

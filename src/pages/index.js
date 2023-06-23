@@ -60,7 +60,7 @@ const Home = () => {
             <div>{clevertap.getCleverTapID()}</div>
             <div id="ctId"></div>
             <div id="lsData"></div>
-            <div style={{ position: 'fixed', bottom: 0, marginBottom: '20px' }}><button  id='bell-selector' style={{ marginLeft: '8px'}}>Inbox</button></div>
+            {/* <div style={{ position: 'fixed', bottom: 0, marginBottom: '20px' }}><button  id='bell-selector' style={{ marginLeft: '8px'}}>Inbox</button></div> */}
         </div>
     );
 };
