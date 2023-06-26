@@ -20,13 +20,13 @@ ct-web-inbox::part(emptyInboxMsg) {
   color:white
 }
 
-ct-web-inbox::part(header) {
+/* ct-web-inbox::part(header) {
   display:none
 }
 
 ct-web-inbox::part(inboxCard) {
   height:450px
-}
+} */
 ct-web-inbox::part(category) {
   border-radius: 0px;
   border-top: 0px;
