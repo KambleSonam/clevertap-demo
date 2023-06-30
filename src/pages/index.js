@@ -52,7 +52,7 @@ const Home = () => {
             <h1>Welcome !!!</h1>
             <input value={text} onChange={(e) => setText(e.target.value)}/>
             <button onClick={clickEvent} style={{ marginLeft: '8px'}}>Event Push</button>
-            <button id='inbox' style={{marginLeft: '16px'}}>Inbox</button>
+            <button id='bell-selector' style={{marginLeft: '16px'}}>Inbox</button>
             {/* <div id='bell-selector'><img style={{width: '24px', height: '24px'}} src={bell} className="bell-icon" alt="bell" /></div> */}
             <div style={{ marginTop: '10px'}}>
                 <button onClick={enablePush}>Enable Push Notifications</button>
