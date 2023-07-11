@@ -5,11 +5,34 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import clevertap from 'clevertap-web-sdk';
 
+
+// clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
+// clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
+// clevertap.init('W6Z-6Z5-975Z')              // Jay Demo
+// clevertap.init('ZWW-WWW-WW4Z', 'in1')       // Bearded Robot
+// clevertap.init('W48-7W7-495Z', 'sk1-staging-4', 'wzrkt.com')      // QA Warrior
 clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
 clevertap.privacy.push({ optOut: false });
 clevertap.privacy.push({useIP: false})
+// clevertap.init('RWW-WWW-WW4Z', 'sk1-staging-13', 'wzrkt.com')      // Hello Kitty
+// clevertap.init('4R4-5K9-475Z', 'sk1-staging-13', 'wzrkt.com')      // Hello Kitty
+
+// clevertap.init('W88-6WZ-686Z', 'sg1')            // sg1 test account
+// clevertap.dismissSpamControl = true
+
+// clevertap.event.push('test03')
+// clevertap.spa = true
 clevertap.setLogLevel(3)
-clevertap.event.push('CM Charged 2')
+// clevertap.event.push('CM Added To Cart 31')
+// clevertap.onUserLogin.push({ "Site": { "Name": "Web User", "Email": "abc@example.com", "Identity": "xyz123", "Custom_Tag": "Champion" } })
+// clevertap.event.push("Web Push View",{"Product Name":"Product1","category":"cat1","date_time":new Date("July 03, 2020 09:30:00"),"cartValue":10,"epoch_value":"$D_1594717641"});
+// clevertap.event.push("custom html event");
+// clevertap.onUserLogin.push({ "Site": { "Name": "Web User", "Email": "abc@example.com", "Identity": "xyz123", "Custom_Tag": "Champion" } });//9889
+
+// clevertap.event.push('Validation test')
+
+// clevertap.init('4R4-5K9-475Z', 'sk1-staging-4', 'wzrkt.com')
+
 
 ReactDOM.render(
   <React.StrictMode>
