@@ -7,11 +7,12 @@ import clevertap from 'clevertap-web-sdk';
 
 
 // clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
-// clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
+clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
 // clevertap.init('W6Z-6Z5-975Z')              // Jay Demo
 // clevertap.init('ZWW-WWW-WW4Z', 'in1')       // Bearded Robot
+// clevertap.init('75R-654-5Z6Z')              // Test- Jitendra
 // clevertap.init('W48-7W7-495Z', 'sk1-staging-4', 'wzrkt.com')      // QA Warrior
-clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
+// clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
 clevertap.privacy.push({ optOut: false });
 clevertap.privacy.push({useIP: false})
 // clevertap.init('RWW-WWW-WW4Z', 'sk1-staging-13', 'wzrkt.com')      // Hello Kitty
@@ -23,6 +24,23 @@ clevertap.privacy.push({useIP: false})
 // clevertap.event.push('test03')
 // clevertap.spa = true
 clevertap.setLogLevel(3)
+// clevertap.onUserLogin.push({
+//   "Site": {
+//       "Name": "Uri",
+//       "Identity": "uri113july2023",
+//       "Custom_Tag": "Champion1"
+//   }
+// })
+// clevertap.onUserLogin.push({
+//   "Site": {
+//       "Name": "Auro1",
+//       "Identity": "auro113july2023",
+//       "Custom_Tag": "Champion1"
+//   }
+// })
+
+
+//   [["dope12july2023","bfe8a4b08d7546efab754ceb46125159"],["mania12july2023","e350d8b88cdf424582653720a8c2af33"]]
 // clevertap.event.push('CM Added To Cart 31')
 // clevertap.onUserLogin.push({ "Site": { "Name": "Web User", "Email": "abc@example.com", "Identity": "xyz123", "Custom_Tag": "Champion" } })
 // clevertap.event.push("Web Push View",{"Product Name":"Product1","category":"cat1","date_time":new Date("July 03, 2020 09:30:00"),"cartValue":10,"epoch_value":"$D_1594717641"});

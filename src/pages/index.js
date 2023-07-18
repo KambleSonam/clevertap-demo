@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import clevertap from 'clevertap-web-sdk';
 import bell from '../assets/bell.png'
 
 const Home = () => {
    const [text, setText] = useState('')
 
-   useEffect(() => {
-    // clevertap.notifications.push({
-    //     "titleText":"Would you like to receive Push Notifications?",
-    //     "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
-    //     "okButtonText":"Ok",
-    //     "rejectButtonText":"Cancel",
-    //     "okButtonColor":"#F28046",
-    //     "askAgainTimeInSeconds":5,
-    //     "serviceWorkerPath": "./firebase-messaging-sw.js"
-    // });
-        document.addEventListener('CT_web_native_display', function(e) {
-            console.log('Key value data ', e);
-        })
-   }, []);
+//    useEffect(() => {
+//     // clevertap.notifications.push({
+//     //     "titleText":"Would you like to receive Push Notifications?",
+//     //     "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
+//     //     "okButtonText":"Ok",
+//     //     "rejectButtonText":"Cancel",
+//     //     "okButtonColor":"#F28046",
+//     //     "askAgainTimeInSeconds":5,
+//     //     "serviceWorkerPath": "./firebase-messaging-sw.js"
+//     // });
+//         document.addEventListener('CT_web_native_display', function(e) {
+//             console.log('Key value data ', e);
+//         })
+//    }, []);
 
    
     function clickEvent() {
@@ -60,8 +60,8 @@ const Home = () => {
             <div style={{ marginTop: '10px'}}>
                 <button onClick={enablePush}>Enable Push Notifications</button>
             </div>
-            <div className="heroDiv" style={{ marginTop: '10px'}}></div>
-            <div id="heroDiv" style={{ marginTop: '10px'}}></div>
+            <div className="Ct-banner-homepage" style={{ marginTop: '10px'}}></div>
+            <div id="Ct-banner-homepage" style={{ marginTop: '10px'}}></div>
             <div>{navigator.userAgent}</div>
             <div>{clevertap.getCleverTapID()}</div>
             <div id="ctId"></div>
