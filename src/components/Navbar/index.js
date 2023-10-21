@@ -29,7 +29,7 @@ const Navbar = () => {
           <NavLink to='/sign-up' activestyle="true">
             Sign Up
           </NavLink>
-          <div id='inbox'><img style={{width: '24px', height: '24px'}} src={bell} className="bell-icon" alt="bell" /></div>
+          <div id='bell-selector'><img style={{width: '24px', height: '24px'}} src={bell} className="bell-icon" alt="bell" /></div>
         </NavMenu>
       </Nav>
     </>

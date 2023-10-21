@@ -66,28 +66,6 @@ class App extends Component {
           <Route exact path='/sign-up' element={<SignUp/>} />
         </Routes>
       </Router>
-      // <div className="App">
-      //   <header className="App-header">
-      //   <button class="notification">
-      //     <span>Inbox</span>
-      //   </button>
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Edit <code>src/App.js</code> and save to reload.
-      //     </p>
-      //     <div>Clevertap Id is {clevertap.getCleverTapID()}</div>
-      //     <div>
-      //       Learn React later but for now:
-      //       {this.state.localStorage.split("\n").map((i, key) => {
-      //         return <div key={key}>{i}</div>;
-      //       })}
-      //       <button onClick={this.clickEvent}>Click Me</button>
-      //       <div style={{padding: '10px'}}>{this.state.cacheData}</div>
-      //     </div>
-      //   </header>
-      //   {/* <div id="hero-banner" style={{backgroundColor: 'red', width: '100%'}}></div> */}
-      //   {/* <div id="hero-carousel" style={{backgroundColor: 'green', width: '100%', marginTop: '40px'}}></div> */}
-      // </div>
     );
   }
 }
