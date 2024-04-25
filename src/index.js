@@ -9,9 +9,8 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.enableCustomCleverTapId = true
 
 // console.log('before', clevertap.enableCustomCleverTapId)
-// clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
+clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
 
-clevertap.init('W4W-Z9Z-7W7Z') 
 // clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
 // clevertap.init('W6Z-6Z5-975Z')              // Jay Demo
 // clevertap.init('ZWW-WWW-WW4Z', 'in1')       // Bearded Robot
@@ -21,10 +20,16 @@ clevertap.init('W4W-Z9Z-7W7Z')
 
 // clevertap.init('W48-7W7-495Z', 'sk1-staging-4', 'wzrkt.com')      // QA Warrior
 // clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
-// clevertap.init('WR5-Z98-W56Z', 'sk1-staging-30', 'wzrkt.com')      // QA Champs
+// clevertap.init('4R4-5K9-475Z', 'sk1-staging-4', 'wzrkt.com')      // noc internal
+
+// clevertap.init('67Z-R86-ZW7Z', 'wus2', 'clevertap-prod-az.com')      
+
+// clevertap.init('468-RZW-ZK6Z', 'sk1-staging-30', '', '012-b64')  //mobile_channels
+
+clevertap.privacy.push({useIP: true})
 clevertap.privacy.push({ optOut: false });
-clevertap.privacy.push({useIP: false})
 clevertap.setLogLevel(3)
+
 
 // console.log('after', clevertap.enableCustomCleverTapId)
 
@@ -32,7 +37,7 @@ clevertap.setLogLevel(3)
 // clevertap.init('4R4-5K9-475Z', 'sk1-staging-13', 'wzrkt.com')      // Hello Kitty
 // clevertap.event.push('React Web Test')
 // clevertap.init('W88-6WZ-686Z', 'sg1')            // sg1 test account
-// clevertap.dismissSpamControl = true
+clevertap.dismissSpamControl = true
 // clevertap.enableCustomCleverTapId = true
 
 // clevertap.event.push('test03')
