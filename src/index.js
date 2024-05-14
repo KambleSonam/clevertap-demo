@@ -9,9 +9,9 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.enableCustomCleverTapId = true
 
 // console.log('before', clevertap.enableCustomCleverTapId)
-clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
+// clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
 
-// clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
+clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
 // clevertap.init('W6Z-6Z5-975Z')              // Jay Demo
 // clevertap.init('ZWW-WWW-WW4Z', 'in1')       // Bearded Robot
 // clevertap.init('6Z8-875-R85Z', 'us1')          // AccCreation2
