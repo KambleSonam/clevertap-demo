@@ -19,8 +19,11 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.init('75R-654-5Z6Z')              // Test- Jitendra
 
 // clevertap.init('W48-7W7-495Z', 'sk1-staging-4', 'wzrkt.com')      // QA Warrior
-clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
+// clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
 // clevertap.init('4R4-5K9-475Z', 'sk1-staging-4', 'wzrkt.com')      // noc internal
+
+clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
+
 
 // clevertap.init('67Z-R86-ZW7Z', 'wus2', 'clevertap-prod-az.com')      
 
