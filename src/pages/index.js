@@ -63,7 +63,7 @@ const Home = () => {
                 <button onClick={enablePush}>Enable Push Notifications</button>
             </div>
             <div className="heroDi1v" style={{ marginTop: '10px'}}></div>
-            <div id="heroDiv" style={{ marginTop: '10px'}}></div>
+            <div id="reportsDownloadCTCampaignId" style={{ marginTop: '10px'}}></div>
             <button onClick={processOUL}>On User Login</button>
             <button onClick={chargedPush} style={{ marginLeft: '16px'}}>Charged Event Push</button>
             <div style={{ marginTop: '16px'}}>{navigator.userAgent}</div>
