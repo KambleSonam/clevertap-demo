@@ -11,7 +11,6 @@ import AnnualReport from './pages/annual';
 import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
-import promptBell from './assets/promptBell.svg'
 class App extends Component {
   constructor(props) {
     super(props);
