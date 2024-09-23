@@ -23,9 +23,9 @@ const Home = () => {
             "okButtonText":"Ok",
             "rejectButtonText":"Cancel",
             "okButtonColor":"#F28046",
-            "askAgainTimeInSeconds":5,
+            "askAgainTimeInSeconds":15,
             "hidePoweredByCT": true,
-            "serviceWorkerPath": "./firebase-messaging-sw.js"
+            "serviceWorkerPath": "./clevertap_sw.js",
         });
     }
 
@@ -55,7 +55,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Welcome !!!</h1>
+            <h1 id="hello">Welcome !!!</h1>
             <input value={text} onChange={(e) => setText(e.target.value)}/>
             <button onClick={clickEvent} style={{ marginLeft: '8px'}}>Event Push</button>
             {/* <button id='bell-selector' style={{marginLeft: '16px'}}>Inbox</button> */}
@@ -70,6 +70,7 @@ const Home = () => {
             <div style={{ marginTop: '16px'}}>{clevertap.getCleverTapID()}</div>
             <div id="ctId"></div>
             <div id="lsData"></div>
+            <div style={{ height: '3000px'}}></div>
             {/* <div style={{ position: 'fixed', bottom: 0, marginBottom: '20px' }}><button  id='bell-selector' style={{ marginLeft: '8px'}}>Inbox</button></div> */}
         </div>
     );

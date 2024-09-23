@@ -36,18 +36,9 @@ class App extends Component {
         "Price": 69.99,
       }
     })
-
-    clevertap.notifications.push({
-      "titleText":"Would you like to receive Push Notifications?",
-      "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
-      "okButtonText":"Ok",
-      "rejectButtonText":"Cancel",
-      "okButtonColor":"#F28046",
-      "askAgainTimeInSeconds":5,
-      "serviceWorkerPath": "./firebase-messaging-sw.js"
-    });
+    
     clevertap.event.push("Product rated");
-
+ 
     document.addEventListener('CT_web_native_display', function(e) {
       console.log('Event is ', e)
     })
