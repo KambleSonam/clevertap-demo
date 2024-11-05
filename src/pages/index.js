@@ -44,7 +44,8 @@ const Home = () => {
         clevertap.onUserLogin.push({
             "Site": {
                 "Name": "Kit",
-                "Identity": randomIdentity.toString()
+                "Identity": randomIdentity.toString(),
+                "Email": "sonamtamgadge@test.com"
             }
         })
     }
