@@ -7,9 +7,9 @@ import clevertap from 'clevertap-web-sdk';
 
 
 // clevertap.enableCustomCleverTapId = true
-clevertap.init('WWW-WWW-WWRZ')
+
 // console.log('before', clevertap.enableCustomCleverTapId)
-// clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
+clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
 // clevertap.init('K99-655-Z96Z', '', '', '556-cc3')              // Demo Ecommerce
 
 // clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
@@ -27,7 +27,8 @@ clevertap.init('WWW-WWW-WWRZ')
 // clevertap.init('WRK-485-456Z', 'sk1-staging-16', 'wzrkt.com')      // Web Testing
 // clevertap.init('6Z8-875-R85Z', 'us1', '', '5ab-b16')
 // clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4')      
-
+// clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com')
+//     
 
 // clevertap.init('67Z-R86-ZW7Z', 'wus2', 'clevertap-prod-az.com')      
 
@@ -36,6 +37,10 @@ clevertap.init('WWW-WWW-WWRZ')
 clevertap.privacy.push({useIP: true})
 clevertap.privacy.push({ optOut: false });
 clevertap.setLogLevel(3)
+
+setTimeout(() => {
+  clevertap.notifications.enable()
+}, 1000)
 
 
 // console.log('after', clevertap.enableCustomCleverTapId)
