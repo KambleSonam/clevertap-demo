@@ -9,7 +9,7 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.enableCustomCleverTapId = true
 
 // console.log('before', clevertap.enableCustomCleverTapId)
-// clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
+clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
 // clevertap.init('K99-655-Z96Z', '', '', '556-cc3')              // Demo Ecommerce
 
 // clevertap.init('ZWW-WWW-WWRZ')              // Bearded Robot eu1
@@ -20,7 +20,7 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.init('75R-654-5Z6Z')              // Test- Jitendra
 
 // clevertap.init('W48-7W7-495Z', 'sk1-staging-4', 'wzrkt.com')      // QA Warrior
-clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
+// clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
 // clevertap.init('4R4-5K9-475Z', 'sk1-staging-4', 'wzrkt.com')      // noc internal
 // clevertap.init('RZK-797-6Z7Z', 'sk1-staging-4', 'wzrkt.com')      // Test-Sonam
 
