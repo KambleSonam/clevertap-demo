@@ -5,15 +5,19 @@
         color: #434761;
         border-radius: 4px;
     }
+
     .select-size input {
         display: none;
     }
+
     input:hover {
         cursor: pointer;
     }
+
     .divider {
         margin: 20px 0 35px;
     }
+
     textarea {
         font-size: 18px;
         border-radius: 4px;
@@ -22,6 +26,7 @@
         border: 1px solid #dcdcdc;
         resize: none;
     }
+
     #titletext {
         font-size: 18px;
         font-weight: 500;
@@ -29,9 +34,11 @@
         margin-bottom: 20px;
         text-align: center;
     }
+
     #tnc {
         color: #fa3e3e;
     }
+
     .close {
         cursor: pointer;
         position: absolute;
@@ -52,6 +59,7 @@
         color: #fff;
         background-position: center;
     }
+
     label {
         font-size: 14px;
         display: inline-block;
@@ -64,6 +72,7 @@
         border-radius: 4px;
         background-color: #eceef1;
     }
+
     #detractor0:checked~label[for="detractor0"],
     #detractor1:checked~label[for="detractor1"],
     #detractor2:checked~label[for="detractor2"],
@@ -74,6 +83,7 @@
         background: #fa3e3e;
         color: #fff;
     }
+
     /*#detractor10:checked ~ label[for="detractor10"],
 #detractor20:checked ~ label[for="detractor20"],
 #detractor30:checked ~ label[for="detractor30"] {
@@ -85,6 +95,7 @@ color: #fff;
         background: #1EB858;
         color: #fff;
     }
+
     #passive7:checked~label[for="passive7"],
     #passive8:checked~label[for="passive8"] {
         background: #ffa500;
@@ -92,135 +103,135 @@ color: #fff;
     }
 </style>
 <div id="first_page">
-  <div class="container1">
-    <div id="titletext">How likely are you to recommend CleverTap?<span id="tnc">*</span></div>
-    <div class="select-size">
-      <!-- <input type="none">Strongly disagree </input>-->
-      <input id="detractor0" name="s-size" onclick="capabilities_selected(0,'detractor')" type="radio" /> 
-      <input id="detractor1" name="s-size" onclick="capabilities_selected(1,'detractor')" type="radio" /> 
-      <input id="detractor2" name="s-size" onclick="capabilities_selected(2,'detractor')" type="radio" /> 
-      <input id="detractor3" name="s-size" onclick="capabilities_selected(3,'detractor')" type="radio" /> 
-      <input id="detractor4" name="s-size" onclick="capabilities_selected(4,'detractor')" type="radio" /> 
-      <input id="detractor5" name="s-size" onclick="capabilities_selected(5,'detractor')" type="radio" /> 
-      <input id="detractor6" name="s-size" onclick="capabilities_selected(6,'detractor')" type="radio" /> 
-      <input id="passive7" name="s-size" onclick="capabilities_selected(7,'passive')" type="radio" /> 
-      <input id="passive8" name="s-size" onclick="capabilities_selected(8,'passive')" type="radio" /> 
-      <input id="promotor9" name="s-size" onclick="capabilities_selected(9,'promotor')" type="radio" /> 
-      <input id="promotor10" name="s-size" onclick="capabilities_selected(10,'promotor')" type="radio" /> 
-      <label for="detractor0">0</label> 
-      <label for="detractor1">1</label> 
-      <label for="detractor2">2</label> 
-      <label for="detractor3">3</label> 
-      <label for="detractor4">4</label> 
-      <label for="detractor5">5</label> 
-      <label for="detractor6">6</label> 
-      <label for="passive7">7</label>
-      <label for="passive8">8</label>
-      <label for="promotor9">9</label> 
-      <label for="promotor10">10</label>
-      <!-- <input type="none"> Strongly agree</input> -->
-      <div>
-        <div class="container2">
-          <div style="display: none;">
-            <div id="titletext">CleverTap is easy to use<span id="tnc">*</span></div>
-            <div class="select-size"><input type="none" />Strongly disagree <input id="detractor10"
-              name="s-size1" onclick="easytouse_selected(1)" type="radio" /> <input id="detractor20"
-              name="s-size1" onclick="easytouse_selected(2)" type="radio" /> <input id="detractor30"
-              name="s-size1" onclick="easytouse_selected(3)" type="radio" /> <input id="neutral40"
-              name="s-size1" onclick="easytouse_selected(4)" type="radio" /> <input id="neutral50"
-              name="s-size1" onclick="easytouse_selected(5)" type="radio" /> <input id="promotor60"
-              name="s-size1" onclick="easytouse_selected(6)" type="radio" /> <input id="promotor70"
-              name="s-size1" onclick="easytouse_selected(7)" type="radio" /> <label
-              for="detractor10">1</label> <label for="detractor20">2</label> <label
-              for="detractor30">3</label> <label for="neutral40">4</label> <label
-              for="neutral50">5</label> <label for="promotor60">6</label> <label
-              for="promotor70">7</label> <input type="none" /> Strongly agree
-              <div class="divider"> </div>
-            </div>
-          </div>
-          <div style="padding-top: 40px;">
-            <div id="titletext">Tell us why you&#39;ve rated CleverTap this way</div>
-            <textarea id="feeback_text" rows="4"></textarea>
-            <div style="margin: 0 auto; text-align: center;"><input name="Maybe later"
-              onclick="closePopUp()" style="margin-right: 15px; display: inline-block; margin-top:20px;color:#fff;font-size: 15px;padding: 11px 19px; background-color: lightgray;
+    <div class="container1">
+        <div id="titletext">How likely are you to recommend CleverTap?<span id="tnc">*</span></div>
+        <div class="select-size">
+            <!-- <input type="none">Strongly disagree </input>-->
+            <input id="detractor0" name="s-size" onclick="capabilities_selected(0,'detractor')" type="radio" />
+            <input id="detractor1" name="s-size" onclick="capabilities_selected(1,'detractor')" type="radio" />
+            <input id="detractor2" name="s-size" onclick="capabilities_selected(2,'detractor')" type="radio" />
+            <input id="detractor3" name="s-size" onclick="capabilities_selected(3,'detractor')" type="radio" />
+            <input id="detractor4" name="s-size" onclick="capabilities_selected(4,'detractor')" type="radio" />
+            <input id="detractor5" name="s-size" onclick="capabilities_selected(5,'detractor')" type="radio" />
+            <input id="detractor6" name="s-size" onclick="capabilities_selected(6,'detractor')" type="radio" />
+            <input id="passive7" name="s-size" onclick="capabilities_selected(7,'passive')" type="radio" />
+            <input id="passive8" name="s-size" onclick="capabilities_selected(8,'passive')" type="radio" />
+            <input id="promotor9" name="s-size" onclick="capabilities_selected(9,'promotor')" type="radio" />
+            <input id="promotor10" name="s-size" onclick="capabilities_selected(10,'promotor')" type="radio" />
+            <label for="detractor0">0</label>
+            <label for="detractor1">1</label>
+            <label for="detractor2">2</label>
+            <label for="detractor3">3</label>
+            <label for="detractor4">4</label>
+            <label for="detractor5">5</label>
+            <label for="detractor6">6</label>
+            <label for="passive7">7</label>
+            <label for="passive8">8</label>
+            <label for="promotor9">9</label>
+            <label for="promotor10">10</label>
+            <!-- <input type="none"> Strongly agree</input> -->
+            <div>
+                <div class="container2">
+                    <div style="display: none;">
+                        <div id="titletext">CleverTap is easy to use<span id="tnc">*</span></div>
+                        <div class="select-size"><input type="none" />Strongly disagree <input id="detractor10"
+                                name="s-size1" onclick="easytouse_selected(1)" type="radio" /> <input id="detractor20"
+                                name="s-size1" onclick="easytouse_selected(2)" type="radio" /> <input id="detractor30"
+                                name="s-size1" onclick="easytouse_selected(3)" type="radio" /> <input id="neutral40"
+                                name="s-size1" onclick="easytouse_selected(4)" type="radio" /> <input id="neutral50"
+                                name="s-size1" onclick="easytouse_selected(5)" type="radio" /> <input id="promotor60"
+                                name="s-size1" onclick="easytouse_selected(6)" type="radio" /> <input id="promotor70"
+                                name="s-size1" onclick="easytouse_selected(7)" type="radio" /> <label
+                                for="detractor10">1</label> <label for="detractor20">2</label> <label
+                                for="detractor30">3</label> <label for="neutral40">4</label> <label
+                                for="neutral50">5</label> <label for="promotor60">6</label> <label
+                                for="promotor70">7</label> <input type="none" /> Strongly agree
+                            <div class="divider"> </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 40px;">
+                        <div id="titletext">Tell us why you&#39;ve rated CleverTap this way</div>
+                        <textarea id="feeback_text" rows="4"></textarea>
+                        <div style="margin: 0 auto; text-align: center;"><input name="Maybe later"
+                                onclick="closePopUp()" style="margin-right: 15px; display: inline-block; margin-top:20px;color:#fff;font-size: 15px;padding: 11px 19px; background-color: lightgray;
 font-size: 18px; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08), 0 3px 8px 0 rgba(78,84,108,0.10);
 border-radius: 4px;" type="submit" value="Maybe later" />
-            <script> function closePopUp() { overlay.remove(); wrapper.remove(); }</script> 
-            <input id="submit_button" name="submit" value="Submit" onclick="nps_submitted()" style="display: inline-block; margin-top:20px;color:#fff;font-size: 15px;padding: 11px 19px;
+                            <script> function closePopUp() { overlay.remove(); wrapper.remove(); }</script>
+                            <input id="submit_button" name="submit" value="Submit" onclick="nps_submitted()" style="display: inline-block; margin-top:20px;color:#fff;font-size: 15px;padding: 11px 19px;
                   background-color: #085CE7; opacity: 0.65; font-size: 18px; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08), 0 3px 8px 0 rgba(78,84,108,0.10);
                   border-radius: 4px;" type="submit" />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div id="second_page" style="text-align: center;display: none;">
-    <h1 style="font-size: 25px;">Thank you for sharing your feedback.</h1>
-    <input id="submit_button" name="Close" onclick="closePopUp()" style="margin:10px;background:#D0D0D0;color:#fff;font-size: 15px;padding: 11px 19px;
+    <div id="second_page" style="text-align: center;display: none;">
+        <h1 style="font-size: 25px;">Thank you for sharing your feedback.</h1>
+        <input id="submit_button" name="Close" onclick="closePopUp()" style="margin:10px;background:#D0D0D0;color:#fff;font-size: 15px;padding: 11px 19px;
 border-radius: 4px; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.08), 0 3px 8px 0 rgba(78,84,108,0.10);" type="submit"
-    value="Close" />
-  </div>
-  <script>
-      var notificationObj;
-      window.parent.clevertap.popupCallback = (notificationData) => {
-          notificationObj = notificationData;
-      };
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    var capability_selected = false;
-    var easy_to_use_selected = false;
-    var submitButtonEnabled = false;
-    var capability_value = 0;
-    var easy_to_use_value = 0;
-    var feedback = "";
-    var overlay = window.parent.document.getElementById("intentOpacityDiv");
-    var wrapper = window.parent.document.getElementById("intentPreview");
-    var npsfeedback = 'notselected';
-    $("body").on("click", "label", function (e) { 
-      var getValue = $(this).attr("for");
-      var goToParent = $(this).parents(".select-size");
-      var getInputRadio = goToParent.find("input[id = " + getValue + "]");
-    }); function capabilities_selected() {
-        capability_selected = true;
-        enableSubmitButton();
-        capability_value = arguments[0];
-        npsfeedback = arguments[1];
-        console.log("Capability Selected :" + capability_value);
-    } function easytouse_selected() {
-        easy_to_use_selected = true;
-        enableSubmitButton();
-        easy_to_use_value = arguments[0];
-        npsfeedback = arguments[1];
-        console.log("Easy To Use Selected :" + easy_to_use_value);
-        document.getElementById("feeback_text").focus();
-    } function enableSubmitButton() {
-        if (capability_selected) {
-            document.getElementById('submit_button').disabled = false;
-            document.getElementById('submit_button').style.opacity = 1;
-            submitButtonEnabled = true;
+            value="Close" />
+    </div>
+    <script>
+        var notificationObj;
+        window.parent.clevertap.popupCallback = (notificationData) => {
+            notificationObj = notificationData;
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var capability_selected = false;
+        var easy_to_use_selected = false;
+        var submitButtonEnabled = false;
+        var capability_value = 0;
+        var easy_to_use_value = 0;
+        var feedback = "";
+        var overlay = window.parent.document.getElementById("intentOpacityDiv");
+        var wrapper = window.parent.document.getElementById("intentPreview");
+        var npsfeedback = 'notselected';
+        $("body").on("click", "label", function (e) {
+            var getValue = $(this).attr("for");
+            var goToParent = $(this).parents(".select-size");
+            var getInputRadio = goToParent.find("input[id = " + getValue + "]");
+        }); function capabilities_selected() {
+            capability_selected = true;
+            enableSubmitButton();
+            capability_value = arguments[0];
+            npsfeedback = arguments[1];
+            console.log("Capability Selected :" + capability_value);
+        } function easytouse_selected() {
+            easy_to_use_selected = true;
+            enableSubmitButton();
+            easy_to_use_value = arguments[0];
+            npsfeedback = arguments[1];
+            console.log("Easy To Use Selected :" + easy_to_use_value);
+            document.getElementById("feeback_text").focus();
+        } function enableSubmitButton() {
+            if (capability_selected) {
+                document.getElementById('submit_button').disabled = false;
+                document.getElementById('submit_button').style.opacity = 1;
+                submitButtonEnabled = true;
+            }
+        } function navigatetoPageTwo() {
+            document.getElementById('first_page').setAttribute("style", "display: none;");
+            document.getElementById('second_page').setAttribute("style", "display: block;");
+        } function nps_submitted() {
+            feeback_text = document.getElementById('feeback_text').value;
+            window.parent.clevertap.event.push("NPS Feedback", {
+                "Month & Year": new Date(),
+                "ts": new Date(),
+                "npstype": "" + npsfeedback,
+                "npsscore_string": "" + capability_value,
+                "npsscore": capability_value,
+                "Feedback": "" + feeback_text,
+                "CleverTap ID": "" + window.parent.clevertap.getCleverTapID(),
+                "Account": "" + window.parent.__ACCOUNT_NAME,
+                "Account ID": "" + window.parent.__ACCOUNT_ID,
+                "User Email": "" + window.parent.__USER_NAME,
+            });
+            console.log('Notification Obj', notificationObj);
+            window.parent.clevertap.raisePopupNotificationClicked(notificationObj);
+            closePopUp();
         }
-    } function navigatetoPageTwo() {
-        document.getElementById('first_page').setAttribute("style", "display: none;");
-        document.getElementById('second_page').setAttribute("style", "display: block;");
-    } function nps_submitted() {
-        feeback_text = document.getElementById('feeback_text').value;
-        window.parent.clevertap.event.push("NPS Feedback", {
-            "Month & Year": new Date(),
-            "ts": new Date(),
-            "npstype": "" + npsfeedback,
-            "npsscore_string": "" + capability_value,
-            "npsscore": capability_value,
-            "Feedback": "" + feeback_text,
-            "CleverTap ID": "" + window.parent.clevertap.getCleverTapID(),
-            "Account": "" + window.parent.__ACCOUNT_NAME,
-            "Account ID": "" + window.parent.__ACCOUNT_ID,
-            "User Email": "" + window.parent.__USER_NAME,
-        });
-        console.log('Notification Obj', notificationObj);
-        window.parent.clevertap.raisePopupNotificationClicked(notificationObj);
-        closePopUp();
-    }
-  </script>
+    </script>
 </div>

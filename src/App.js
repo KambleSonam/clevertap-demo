@@ -39,7 +39,7 @@ class App extends Component {
     clevertap.event.push("Product rated");
  
     document.addEventListener('CT_web_native_display', function(e) {
-      console.log('Event is ', e)
+      console.log('Event is ', e.details)
     })
   }
 

@@ -3,6 +3,7 @@ import clevertap from 'clevertap-web-sdk';
 
 const Home = () => {
    const [text, setText] = useState('')
+   const [email, setEmail] = useState('') // New state for email input
 
    useEffect(() => {
         document.addEventListener('CT_web_native_display', function(e) {
@@ -18,14 +19,26 @@ const Home = () => {
 
     function enablePush() {
         clevertap.notifications.push({
-            "titleText":"Would you like to receive Push Notifications?",
-            "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
-            "okButtonText":"Ok",
-            "rejectButtonText":"Cancel",
-            "okButtonColor":"#F28046",
-            "askAgainTimeInSeconds":15,
-            "hidePoweredByCT": true,
-            "serviceWorkerPath": "./clevertap_sw.js",
+            // "titleText":"Would you like to receive Push Notifications?",
+            // "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
+            // "okButtonText":"Ok",
+            // "rejectButtonText":"Cancel",
+            // "okButtonColor":"#F28046",
+            // "askAgainTimeInSeconds":15,
+            // "hidePoweredByCT": true,
+            // "serviceWorkerPath": "./clevertap_sw.js",
+
+            apnsWebPushId: "web.com.localhost.pushDemo", //only for safari browser
+            apnsWebPushServiceUrl:
+                    "https://us-central1-chetan-s-demo-app.cloudfunctions.net/api", //only for safari browser
+            titleText: "Would you like to receive Push Notifications?",
+            bodyText:
+                    "We promise to only send you relevant content and give you updates on your transactions",
+            okButtonText: "Sign me up!",
+            rejectButtonText: "No thanks",
+            okButtonColor: "#f28046",
+            hidePoweredByCT: true,
+            serviceWorkerPath: "/clevertap_sw.js",
         });
     }
 
@@ -40,14 +53,16 @@ const Home = () => {
     }
 
     function processOUL() {
-        const randomIdentity = generateRandomAlphanumeric();
+        // const randomIdentity = generateRandomAlphanumeric();
         clevertap.onUserLogin.push({
             "Site": {
-                "Name": "Kit",
-                "Identity": randomIdentity.toString(),
-                "Email": "sonamtamgadge@test.com"
+                "Name": "Kit Harry",
+                // "Identity": randomIdentity.toString(),
+                "Email": email || "sonamtamgadge2@test.com" // Use email from input or fallback to default
             }
         })
+        clevertap.event.push('MY_CT_TEST')
+        window.location.href = '/events';
     }
 
     function chargedPush() {
@@ -65,7 +80,19 @@ const Home = () => {
             </div>
             <div className="heroDi1v" style={{ marginTop: '10px'}}></div>
             <div id="reportsDownloadCTCampaignId" style={{ marginTop: '10px'}}></div>
-            <button onClick={processOUL}>On User Login</button>
+            
+            {/* New email input field */}
+            <div style={{ marginTop: '10px'}}>
+                <input 
+                    type="email"
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter email address"
+                    style={{ marginRight: '8px', padding: '4px' }}
+                />
+                <button onClick={processOUL}>On User Login</button>
+            </div>
+            
             <button onClick={chargedPush} style={{ marginLeft: '16px'}}>Charged Event Push</button>
             <div style={{ marginTop: '16px'}}>{navigator.userAgent}</div>
             <div style={{ marginTop: '16px'}}>{clevertap.getCleverTapID()}</div>
