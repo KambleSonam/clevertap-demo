@@ -25,9 +25,11 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.init('RZK-797-6Z7Z', 'sk1-staging-4', 'wzrkt.com')      // Test-Sonam
 // clevertap.init('WRK-485-456Z', 'sk1-staging-16', 'wzrkt.com')      // Web Testing
 // clevertap.init('6Z8-875-R85Z', 'us1', '', '5ab-b16')
-// clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4')    
+clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4')    
 // clevertap.enableFetchApi = true
-clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com', '015-4bb')
+// clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com', '015-4bb', {
+//   enableTVControls: true
+// })
 
 // clevertap.init('67Z-R86-ZW7Z', 'wus2', 'clevertap-prod-az.com')      
 

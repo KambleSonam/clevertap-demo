@@ -96,8 +96,8 @@ const Home = () => {
             <button onClick={chargedPush} style={{ marginLeft: '16px'}}>Charged Event Push</button>
             <div style={{ marginTop: '16px'}}>{navigator.userAgent}</div>
             <div style={{ marginTop: '16px'}}>{clevertap.getCleverTapID()}</div>
-            <div id="ctId"></div>
-            <div id="lsData"></div>
+            <div id="ct-carousel"></div>
+            <div id="div-ct-banner"></div>
             <div style={{ height: '3000px'}}></div>
             {/* <div style={{ position: 'fixed', bottom: 0, marginBottom: '20px' }}><button  id='bell-selector' style={{ marginLeft: '8px'}}>Inbox</button></div> */}
         </div>
