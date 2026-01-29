@@ -15,10 +15,8 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.3"
   },
-  "resolve":{
-    "fallback":{
-      "crypto": false
-    }
+  "browser":{
+    "crypto": false
   },
   "scripts": {
     "start": "react-scripts start",
