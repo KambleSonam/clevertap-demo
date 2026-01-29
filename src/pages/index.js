@@ -19,26 +19,27 @@ const Home = () => {
 
     function enablePush() {
         clevertap.notifications.push({
-            // "titleText":"Would you like to receive Push Notifications?",
-            // "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
-            // "okButtonText":"Ok",
-            // "rejectButtonText":"Cancel",
-            // "okButtonColor":"#F28046",
-            // "askAgainTimeInSeconds":15,
-            // "hidePoweredByCT": true,
-            // "serviceWorkerPath": "./clevertap_sw.js",
+            "titleText":"Would you like to receive Push Notifications?",
+            "bodyText":"We promise to only send you relevant content and give you updates on your transactions",
+            "okButtonText":"Ok",
+            "rejectButtonText":"Cancel",
+            "okButtonColor":"#F28046",
+            "askAgainTimeInSeconds":15,
+            "hidePoweredByCT": true,
+            "skipDialog": true,
+            serviceWorkerPath: "./clevertap_sw.js",
 
-            apnsWebPushId: "web.com.localhost.pushDemo", //only for safari browser
-            apnsWebPushServiceUrl:
-                    "https://us-central1-chetan-s-demo-app.cloudfunctions.net/api", //only for safari browser
-            titleText: "Would you like to receive Push Notifications?",
-            bodyText:
-                    "We promise to only send you relevant content and give you updates on your transactions",
-            okButtonText: "Sign me up!",
-            rejectButtonText: "No thanks",
-            okButtonColor: "#f28046",
-            hidePoweredByCT: true,
-            serviceWorkerPath: "/clevertap_sw.js",
+            // apnsWebPushId: "web.com.localhost.pushDemo", //only for safari browser
+            // apnsWebPushServiceUrl:
+            //         "https://us-central1-chetan-s-demo-app.cloudfunctions.net/api", //only for safari browser
+            // titleText: "Would you like to receive Push Notifications?",
+            // bodyText:
+            //         "We promise to only send you relevant content and give you updates on your transactions",
+            // okButtonText: "Sign me up!",
+            // rejectButtonText: "No thanks",
+            // okButtonColor: "#f28046",
+            // hidePoweredByCT: true,
+            // serviceWorkerPath: "/clevertap_sw.js",
         });
     }
 
