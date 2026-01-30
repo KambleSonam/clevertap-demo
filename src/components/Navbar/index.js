@@ -5,7 +5,6 @@ import {
   Bars,
   NavMenu,
 } from './NavbarElements';
-import bell from '../../assets/bell.png'
 import promptBell from '../../assets/promptBell.svg'
   
 const Navbar = () => {
