@@ -63,7 +63,7 @@ const Home = () => {
     return (
         <div>
             <h1 id="hello">Welcome !!!</h1>
-            <input value={text} onChange={(e) => setText(e.target.value)}/>
+            <input id="text-input" value={text} onChange={(e) => setText(e.target.value)}/>
             <button onClick={clickEvent} style={{ marginLeft: '8px'}}>Event Push</button>
             {/* <button id='bell-selector' style={{marginLeft: '16px'}}>Inbox</button> */}
             <div style={{ marginTop: '10px'}}>

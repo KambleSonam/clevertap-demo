@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,7 +9,7 @@ import clevertap from 'clevertap-web-sdk';
 // clevertap.enableCustomCleverTapId = true
 
 // console.log('before', clevertap.enableCustomCleverTapId)
-// clevertap.init('W9R-486-4W5Z', '', '', '', {enableEncryptionInTransit: true})              // Clevertap Sample
+// clevertap.init('W9R-486-4W5Z')              // Clevertap Sample
 // clevertap.init('K99-655-Z96Z', '', '', '556-cc3')              // Demo Ecommerce
 
 // clevertap.init('WWW-WWW-WWRZ')              // Bearded Robot eu1
@@ -21,7 +21,11 @@ import clevertap from 'clevertap-web-sdk';
 
 // clevertap.init('W48-7W7-495Z', 'sk1-staging-4', 'wzrkt.com')      // QA Warrior
 // clevertap.init('WRK-485-456Z', 'sk1-staging-4', 'wzrkt.com')      // Web Testing
-clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com', '', {enableEncryptionInTransit: true})      // noc internal
+// clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com', '015-4bb', {enableEncryptionInTransit: true})      // noc internal
+
+//  clevertap.init('R74-ZWR-R44Z') 
+// clevertap.init('468-RZW-ZK6Z', 'sk1-staging-4', 'wzrkt.com', '')      // noc internal
+
 // clevertap.init('RZK-797-6Z7Z', 'sk1-staging-4', 'wzrkt.com')      // Test-Sonam
 // clevertap.init('WRK-485-456Z', 'sk1-staging-16', 'wzrkt.com')      // Web Testing
 // clevertap.init('6Z8-875-R85Z', 'us1', '', '5ab-b16')
@@ -33,17 +37,22 @@ clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com', '', {enableEncrypti
 
 // clevertap.init('67Z-R86-ZW7Z', 'wus2', 'clevertap-prod-az.com')      
 
-// clevertap.init('468-RZW-ZK6Z', 'sk1-staging-30', '', '012-b64')  //mobile_channels
+// clevertap.init('468-RZW-ZK6Z', 'sk1-staging-30', 'wzrkt.com')  //mobile_channels
+clevertap.init('884-5ZW-8Z7Z', 'sk1-staging-4', 'wzrkt.com')  //mobile_channels
+
 
 clevertap.privacy.push({useIP: true})
 clevertap.privacy.push({ optOut: false });
 clevertap.setLogLevel(4)
+// clevertap.spa = true
+// clevertap.dismissSpamControl = false
 
-ReactDOM.render(
+
+const root = createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

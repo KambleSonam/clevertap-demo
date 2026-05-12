@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   background: #63D471;
   height: 85px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
@@ -13,6 +14,20 @@ export const Nav = styled.nav`
   /* justify-content: flex-start; */
 `;
   
+export const NavBrand = styled(Link)`
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  &:hover {
+    opacity: 0.85;
+  }
+`;
+
 export const NavLink = styled(Link)`
   color: #808080;
   display: flex;

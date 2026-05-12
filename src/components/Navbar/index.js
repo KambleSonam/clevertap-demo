@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Nav,
+  NavBrand,
   NavLink,
   Bars,
   NavMenu,
@@ -11,8 +12,9 @@ const Navbar = () => {
   return (
     <>
       <Nav>
+        <NavBrand to="/">CleverTap Demo</NavBrand>
         <Bars />
-  
+
         <NavMenu>
           <NavLink to='/events' activestyle="true">
             Events
